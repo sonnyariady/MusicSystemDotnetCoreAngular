@@ -33,13 +33,13 @@ ArtistName : string = "";
     this.ImageUrl = objArtist.imageUrl;
     this.SampleUrl = objArtist.sampleUrl;
 
-    this.service.playSound(this.SampleUrl );
+    //this.service.playSound(this.SampleUrl );
 
   }
 
   CloseWindows()
   {
-    this.service.stopSound();
+    //this.service.stopSound();
     
     this.dialogRef.close({
       message: 'Confirm'
