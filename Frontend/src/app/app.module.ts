@@ -22,14 +22,8 @@ import { GeneralService } from 'src/app/_services/general.service';
 
 //RootComponent
 import { HomeComponent } from './_pages/home/home.component';
-import { MainLayoutComponent } from './main-layout/main-layout/main-layout.component';
-import { MainHeaderComponent } from './main-layout/main-header/main-header.component';
-import { MainSidebarComponent } from './main-layout/main-sidebar/main-sidebar.component';
-import { MainFooterComponent } from './main-layout/main-footer/main-footer.component';
-import { LoginLayoutComponent } from './login-layout/login-layout/login-layout.component';
-import { LoginHeaderComponent } from './login-layout/login-header/login-header.component';
-import { LoginFooterComponent } from './login-layout/login-footer/login-footer.component';
-import { LoginComponent } from './_pages/login/login.component';
+ 
+ 
  
  
 
@@ -39,16 +33,6 @@ import { ForbiddenComponent } from './_pages/forbidden/forbidden.component';
 import { NotFoundComponent } from './_pages/not-found/not-found.component';
  
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-import { UserService } from './_services/user.service';
-import { FormPopulatorService } from './_services/form-populator.service';
-import { TaskToDoService } from './_services/task-to-do.service';
-import { PinjamListComponent } from './_pages/Pinjam/pinjam-list/pinjam-list.component';
-import { BukuListComponent } from './_pages/Buku/buku-list/buku-list.component';
-import { PinjamCreateComponent } from './_pages/Pinjam/pinjam-create/pinjam-create.component';
-import { BukuLookupComponent } from './_pages/Popups/buku-lookup/buku-lookup.component';
-import { AnggotaListComponent } from './_pages/Anggota/anggota-list/anggota-list.component';
-import { AnggotaCreateComponent } from './_pages/Anggota/anggota-create/anggota-create.component';
-import { BukuCreateComponent } from './_pages/Buku/buku-create/buku-create.component';
 import { MusicListComponent } from './_pages/Artist/music-list/music-list.component';
 import { MusicCreateComponent } from './_pages/Artist/music-create/music-create.component';
 import { PlayMusicLookupComponent } from './_pages/Popups/play-music-lookup/play-music-lookup.component';
@@ -62,26 +46,12 @@ import { PlayMusicLookupComponent } from './_pages/Popups/play-music-lookup/play
   declarations: [
     AppComponent,
     HomeComponent,
-    MainLayoutComponent,
-    MainHeaderComponent,
-    MainSidebarComponent,
-    MainFooterComponent,
-    LoginLayoutComponent,
-    LoginHeaderComponent,
-    LoginFooterComponent,
-    
-    LoginComponent,
+     
    
    
     ForbiddenComponent,
     NotFoundComponent,
-    PinjamListComponent,
-    BukuListComponent,
-    PinjamCreateComponent,
-    BukuLookupComponent,
-    AnggotaListComponent,
-    AnggotaCreateComponent,
-    BukuCreateComponent,
+ 
     MusicListComponent,
     MusicCreateComponent,
     PlayMusicLookupComponent,
@@ -109,11 +79,7 @@ import { PlayMusicLookupComponent } from './_pages/Popups/play-music-lookup/play
     NgMultiSelectDropDownModule.forRoot()
   ],
   providers: [
-    FormPopulatorService,
-   
-    UserService,
     
-    TaskToDoService,
     
     DatePipe, CurrencyPipe,
     {
@@ -121,7 +87,6 @@ import { PlayMusicLookupComponent } from './_pages/Popups/play-music-lookup/play
       useValue: 'en' // 'de' for Germany, 'fr' for France ...
      },
   ],entryComponents:[
-    BukuLookupComponent,
     PlayMusicLookupComponent
  
   ],

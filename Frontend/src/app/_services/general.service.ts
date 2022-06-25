@@ -4,7 +4,7 @@ import { Client, ISoapMethodResponse, NgxSoapService } from 'ngx-soap';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
  
-import { User } from '../_models/user.model';
+ 
 import * as moment from 'moment';
 import { HttpClient } from '@angular/common/http';
 import { StringMap } from '@angular/compiler/src/compiler_facade_interface';
@@ -17,7 +17,7 @@ export class GeneralService{
   userClient : Client;
   populatorClient: Client;
   taskClient : Client;
-  currentUser : User;
+  
 
   //Observable Object
   private actionEventSource = new BehaviorSubject<string>("null");
@@ -161,6 +161,14 @@ export class GeneralService{
       audio.play();
     }
 
+    stopSound()
+    {
+      let audio = new Audio();
+      //audio.src = source;
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
 
   actionEventTrigger(event : string){
     this.actionEventSource.next(event);
@@ -176,7 +184,7 @@ export class GeneralService{
 
   getCurrentUser(){
     if(localStorage.getItem('CurrentUser')){
-      this.currentUser = JSON.parse(atob(localStorage.getItem('CurrentUser')));   
+      //this.currentUser = JSON.parse(atob(localStorage.getItem('CurrentUser')));   
          
     }
   }

@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { User } from '../_models/user.model';
+ 
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
-  currentUserData : User
+  
 
   constructor(
     private router : Router,
@@ -22,7 +22,7 @@ export class AuthGuard implements CanActivate {
       console.log("Auth gurd check curruser: ", currentUser);
 
         if (currentUser) {
-            this.currentUserData = JSON.parse(atob(localStorage.getItem('CurrentUser')));
+           //this.currentUserData = JSON.parse(atob(localStorage.getItem('CurrentUser')));
   
             return true;
         }else{

@@ -39,6 +39,8 @@ ArtistName : string = "";
 
   CloseWindows()
   {
+    this.service.stopSound();
+    
     this.dialogRef.close({
       message: 'Confirm'
     });

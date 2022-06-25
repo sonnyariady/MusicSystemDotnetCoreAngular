@@ -8,10 +8,6 @@ export const environment = {
   apiURL : 'http://localhost:5000/api/',
 
    App_Name : 'Music System',
-   modulUser : 'UserLogins/',
-   modulFormPop : 'WS_ATrans_FormPopulator.asmx?WSDL',
-   modulRequest : 'WS_ATrans_Request.asmx?WSDL',
-  //wsURL : 'http://localhost:54399/Dashboard_PSI.asmx?WSDL',
   appName : 'Music System'
 };
 
