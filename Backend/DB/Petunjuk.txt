@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=(localdb)\MSSQLLOCALDB;Database=dbmusic;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force

@@ -1,0 +1,21 @@
+Contoh Buat model baru: ng g cl _models\TemplateEmailModel --type=model --skipTests=true
+
+Contoh Buat komponen baru: ng g c _pages\Transportation\TransEditReview  --skipTests=true
+
+ng g c _pages\Popups\EditRoomPopup --skipTests=true
+
+ng g service _services\User --skipTests=true
+
+ng g cl _models\Anggota --type=model --skipTests=true
+ng g cl _models\Artist --type=model --skipTests=true
+
+ng g c _pages\Artist\MusicList --skipTests=true
+ng g c _pages\Artist\MusicCreate --skipTests=true
+
+ng g c _pages\Buku\BukuList --skipTests=true
+ng g c _pages\Buku\PinjamList --skipTests=true
+ng g c _pages\Popups\BukuLookup --skipTests=true
+
+ng g cl _models\PinjamHeaderModel --type=model --skipTests=true
+
+ng g cl _models\BukuViewModel --type=model --skipTests=true

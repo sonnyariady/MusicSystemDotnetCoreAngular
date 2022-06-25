@@ -1,0 +1,43 @@
+<div class="block-title-main">
+    
+    <h3>List Buku</h3>
+</div>
+<hr>
+<div class="table-responsive">
+    <table class="table table-bordered row-border hover">
+        <thead>
+            <tr>  
+                            <th>Kode Buku</th>
+                            
+                            <th>Judul Buku</th>
+                             
+                           
+                            <th>Pengarang</th>
+                            <th>Penerbit</th>
+                          
+                       
+                            
+                             
+            </tr>
+     
+        </thead>
+        <tbody *ngIf="ListData != null || ListData?.length != 0">
+            <tr *ngFor="let item of ListData">
+                <td style="width: 5%;">{{item.kdBuku}}</td>
+               
+                <td style="width: 35%;">{{item.judulBuku}}</td>
+                <td style="width: 25%;">{{item.pengarang}}</td>
+                <td style="width: 25%;">{{item.nama_Penerbit}}</td>
+                
+                 
+                
+            </tr>
+        </tbody>
+        <tbody *ngIf="ListData == null || ListData?.length == 0">
+            <tr>
+                <td colspan="7" class="no-data-available">No data available!</td>
+            </tr>
+        </tbody>
+ 
+    </table>
+</div>
